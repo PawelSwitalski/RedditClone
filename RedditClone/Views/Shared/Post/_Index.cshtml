@@ -1,0 +1,11 @@
+﻿@model IEnumerable<PostViewModel>
+
+<div>
+    <h3>Posts</h3>
+    <ul>
+        @foreach (var post in Model)
+        {
+            <li>@post.Title - @post.UserName</li>
+        }
+    </ul>
+</div>

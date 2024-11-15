@@ -53,7 +53,7 @@ namespace RedditClone.Data
                 context.SaveChanges();
             }
 
-            if (context.Posts.Any())
+            if (!context.Posts.Any())
             {
                 var user = context.Users.Where(u => u.UserName == "jan").FirstOrDefault();
                 if (user == null)
