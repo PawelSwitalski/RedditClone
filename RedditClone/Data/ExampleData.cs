@@ -68,14 +68,14 @@ namespace RedditClone.Data
                     {
                         Id = Guid.NewGuid(),
                         Title = "Hello world Post",
-                        BodyText = "this is first post. User is unndefined in this post.",
+                        BodyText = "this is first post. User is unndefined in this post. \nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
                         LikesNumber = 1
                     },
                     new Models.Post
                     {
                         Id = Guid.NewGuid(),
                         Title = "First Jan Post C# forum",
-                        BodyText = "Guid in C#. If the string represents a valid GUID format, you can use either of these methods:\r\n\r\nUsing Guid.Parse\r\nUsing Guid.TryParse",
+                        BodyText = "Guid in C#. If the string represents a valid GUID format, you can use either of these methods:\r\n\r\nUsing Guid.Parse\r\nUsing Guid.TryParse\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
                         UserId = janId,
                         User = user
                     });

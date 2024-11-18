@@ -1,6 +1,6 @@
 ﻿@model IEnumerable<PostViewModel>
 
-<div>
+<div class="container mt-5">
     <h3>Posts</h3>
     <ul>
         @foreach (var post in Model)
@@ -8,4 +8,14 @@
             <li>@post.Title - @post.UserName</li>
         }
     </ul>
+    @foreach (var post in Model)
+    {
+        <div class ="p-4 m-3 rounded border border-primary bg-light text-start">
+            <h3>@post.Title</h3><span>@post.UserName</span>
+            <p>@post.BodyText</p>
+            <div class="text-end">
+                @await Html.PartialAsync("_LikeButtons", post)
+            </div>
+        </div>
+    }
 </div>
